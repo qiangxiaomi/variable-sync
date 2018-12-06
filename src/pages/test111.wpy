@@ -1,0 +1,46 @@
+<template>
+  <view class="test">
+    <view class="test-wrap"></view>
+  </view>
+</template>
+
+
+<script>
+  import wepy from 'wepy'
+  export default class extends wepy.page{
+
+    config = {
+      navigationBarBackgroundColor: '#fff',
+      navigationBarTitleText: '赚多多',
+      navigationBarTextStyle: 'black',
+      backgroundColor: '#fff',
+    }
+
+    data = {
+      wrapBackColor: 'red'
+    }
+
+    methods = {
+      // changeBackColor(){
+      //   this.wrapBackColor = this.wrapBackColor = 'green' ? 'red' : 'green'
+      // }
+    }
+  }
+</script>
+
+
+<style lang="less" scoped>
+  .test{
+    &-wrap{
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      width: 100rpx;
+      height: 100rpx;
+      background: #ff5555;
+    }
+  }
+</style>
