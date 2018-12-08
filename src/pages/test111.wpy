@@ -1,6 +1,6 @@
 <template>
   <view class="test">
-    <view class="test-wrap"></view>
+    <view class="test-wrap">TEST</view>
   </view>
 </template>
 
@@ -11,13 +11,14 @@
 
     config = {
       navigationBarBackgroundColor: '#fff',
-      navigationBarTitleText: '赚多多',
+      navigationBarTitleText: 'css和js变量同步',
       navigationBarTextStyle: 'black',
       backgroundColor: '#fff',
     }
 
     data = {
-      wrapBackColor: 'red'
+      wrapBackColor: '#ff5555',
+      wrapBackHeight: 200
     }
 
     methods = {
@@ -40,7 +41,11 @@
       margin: auto;
       width: 100rpx;
       height: 100rpx;
-      background: #ff5555;
+      line-height: 100rpx;
+      text-align: center;
+      //record
+      background: "-@wrapBackColor";
+      color: "-@wrapBackColor";
     }
   }
 </style>
