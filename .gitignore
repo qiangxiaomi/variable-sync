@@ -1,3 +1,4 @@
 node_modules
+!node_modules/wepy-plugin-variablesync/index.js
 dist
 .DS_Store
